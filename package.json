@@ -4,8 +4,10 @@
   "description": "",
   "homepage": "https://Cherniatynskyi.github.io/ruby-home",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ruby-home/"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /ruby-home/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "dependencies": {
     "flatpickr": "^4.6.13",
+    "gh-pages": "^6.0.0",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.5"
   },
