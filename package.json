@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "ruby-home",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://Cherniatynskyi.github.io/ruby-home",
@@ -9,16 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://cherniatynskyi.github.io/ruby-home/"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Cherniatynskyi Mark <markushalot34@gmail.com>",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "flatpickr": "^4.6.13",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
