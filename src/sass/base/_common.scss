@@ -1,0 +1,24 @@
+.content-section{
+    max-width: 1150px;
+    margin: auto;
+}
+
+.button{
+    color: white;
+    background-color: $button-color;
+    border-radius: 5px;
+
+    height: 54px;
+    padding: 0 30px;
+
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(44, 81, 232);
+    }
+}
