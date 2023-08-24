@@ -6,7 +6,7 @@
 .button{
     color: white;
     background-color: $button-color;
-    border-radius: 5px;
+    border-radius: 8px;
 
     height: 54px;
     padding: 0 30px;
@@ -21,4 +21,13 @@
     &:hover{
         background-color: rgb(44, 81, 232);
     }
+}
+
+.secondary-title{
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+    text-align: center;
 }

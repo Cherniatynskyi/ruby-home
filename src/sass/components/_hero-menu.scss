@@ -1,0 +1,95 @@
+.hero-menu {
+    position: absolute;
+
+    top: 380px;
+    width: 845px;
+    z-index: 999;
+
+}
+
+.hero-menu_upsection {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 10px 70px 10px rgba(0, 0, 0, 0.07);
+
+    padding: 15px 30px;
+}
+
+.hero-menu__buttons-list {
+    display: flex;
+    gap: 44px;
+}
+
+
+.hero-menu__buton {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+
+    background-color: white;
+    opacity: 0.7;
+
+    cursor: pointer;
+
+    &.active {
+        color: $accent-color;
+    }
+}
+
+/* --------- SELECT MENU ----------*/
+
+.hero-menu_subsection {
+    display: flex;
+    align-items: center;
+
+    padding: 30px;
+    background-color: white;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0px 80px 70px 30px rgba(0, 0, 0, 0.07);
+}
+
+.hero-menu__selection-list{
+    display: flex;
+}
+
+.hero-menu__selection-item{
+    position: relative;
+    padding: 0 67px;
+
+    &:first-child{
+        padding-left: 0;
+    }
+
+    &::after{
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: 30%;
+
+        width: 1px;
+        height: 34px;
+        background-color: $main-txt-color;
+        opacity: 0.2;
+    }
+
+    span{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.hero-menu-select-button{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    opacity: 0.7;
+    background-color: inherit;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}

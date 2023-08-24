@@ -1,0 +1,84 @@
+.popular{
+    padding: 140px 0;
+
+    .popular-title {
+        margin-bottom: 70px;
+        display: inline-block;
+    }
+
+    .popular__showmore-link{
+        float: right;
+        color: $accent-color;
+        margin-top: 20px;
+
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+
+.popular-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px
+}
+
+
+.popular-item{
+    border-radius: 10px;
+    box-shadow: 0px 8px 70px 0px rgba(0, 0, 0, 0.07);
+
+
+    .property__content-container{
+        padding: 30px 30px 35px 30px;
+    }
+
+    .property__item-title{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    a{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+
+        opacity: 0.7;
+
+        margin-top: 10px;
+    }
+
+    .property__icon-list{
+        display: flex;
+        gap: 32px;
+
+        font-size: 14px;
+
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.9;
+
+        margin-top: 20px;
+    }
+
+    .property-cost{
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+
+        color: $accent-color;
+
+        margin-top: 26px;
+    }
+
+    .property-button{
+        float: right;
+        height: 44px;
+        margin-top: 20px;
+    }
+}
