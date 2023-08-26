@@ -1,0 +1,51 @@
+.subscription-container{
+    background-color: #433E89;
+
+    padding: 70px 208px;
+    border-radius: 10px;
+}
+
+.subscription-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.36;
+}
+
+.subscription-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+    color: #FFF;
+    opacity: 0.7;
+}
+
+.subscription-form{
+    position: relative;
+    margin-top: 70px;
+}
+
+.subscription-input{
+    height: 70px;
+    width: 100%;
+    border-radius: 10px;
+
+    border: none;
+    padding: 0 30px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.subscription-button{
+    position: absolute;
+    top: 50%;
+    right: 7;
+
+    transform: translateY(-50%);
+}
