@@ -23,6 +23,7 @@
 
 
 .hero-menu__buton {
+    position: relative;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
@@ -34,7 +35,15 @@
 
     &.active {
         color: $accent-color;
+        opacity: 1;
     }
+
+    &:hover{
+        color: $accent-color;
+        opacity: 1;
+    }
+    
+
 }
 
 /* --------- SELECT MENU ----------*/
@@ -78,9 +87,11 @@
         font-weight: 500;
         line-height: normal;
     }
+
 }
 
 .hero-menu-select-button{
+    position: relative;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -92,4 +103,15 @@
     margin-bottom: 10px;
 
     cursor: pointer;
+
+    & > svg {
+        fill: inherit;
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+        left: 110%;
+
+        opacity: 0.8;
+        }
 }

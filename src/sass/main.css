@@ -49,11 +49,18 @@ body {
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   color: white;
   background-color: #2E6EFF;
   border-radius: 8px;
   height: 54px;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
@@ -64,12 +71,37 @@ body {
   background-color: #2c51e8;
 }
 
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .secondary-title {
+  display: inline-block;
+  position: relative;
   font-size: 44px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-align: center;
+}
+
+.secondary-title::after {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: -18%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url("https://w1.pngwing.com/pngs/793/457/png-transparent-house-symbol-logo-home-red-text-line-area-circle-thumbnail.png");
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.05;
 }
 
 .nav {
@@ -174,6 +206,7 @@ body {
 }
 
 .hero-menu__buton {
+  position: relative;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
@@ -184,6 +217,12 @@ body {
 
 .hero-menu__buton.active {
   color: #FE753F;
+  opacity: 1;
+}
+
+.hero-menu__buton:hover {
+  color: #FE753F;
+  opacity: 1;
 }
 
 /* --------- SELECT MENU ----------*/
@@ -234,6 +273,7 @@ body {
 }
 
 .hero-menu-select-button {
+  position: relative;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -244,28 +284,65 @@ body {
   cursor: pointer;
 }
 
+.hero-menu-select-button > svg {
+  fill: inherit;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 110%;
+  opacity: 0.8;
+}
+
 .partners {
   padding-top: 100px;
 }
 
 .partners .partners-title {
   margin-bottom: 65px;
+  position: relative;
 }
 
 .partners-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 109px;
+  gap: 59px;
+}
+
+.partners-list .partners-item > a {
+  display: block;
+  padding: 20px;
+}
+
+.partners-list .partners-item > a:hover {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.07);
 }
 
 .popular {
-  padding: 140px 0;
+  padding: 130px 0;
 }
 
 .popular .popular-title {
+  position: relative;
   margin-bottom: 70px;
   display: inline-block;
+}
+
+.popular .popular-title::after {
+  content: '';
+  position: absolute;
+  left: -8%;
+  top: -15%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url("https://w1.pngwing.com/pngs/793/457/png-transparent-house-symbol-logo-home-red-text-line-area-circle-thumbnail.png");
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.05;
 }
 
 .popular .popular__showmore-link {
@@ -298,18 +375,44 @@ body {
 }
 
 .popular-item .property__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 22px;
   font-weight: 600;
   line-height: normal;
 }
 
+.popular-item .property__item-title > svg {
+  cursor: pointer;
+  fill: #bbb;
+  margin-left: auto;
+}
+
+.popular-item .property__item-title > svg:active {
+  fill: red;
+}
+
 .popular-item a {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
   opacity: 0.7;
   margin-top: 10px;
+}
+
+.popular-item a > svg {
+  margin-right: 10px;
+  opacity: 0.8;
 }
 
 .popular-item .property__icon-list {
@@ -526,5 +629,77 @@ body {
   right: 7;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 140px 0 190px 0;
+}
+
+.footer-socials {
+  max-width: 260px;
+}
+
+.footer-socials .footer__socials-descr {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-top: 25px;
+}
+
+.footer-socials .footer__socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials .footer__socials-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FE753F;
+  margin-top: 25px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 175px;
+  margin-left: 175px;
+}
+
+.footer-nav .footer-nav-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer-nav .footer-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.footer-nav .footer-nav__item {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  opacity: 0.7;
+}
+
+.footer-nav .footer-nav__item:hover {
+  color: #FE753F;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

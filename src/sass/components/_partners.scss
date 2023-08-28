@@ -3,11 +3,22 @@
 
     .partners-title {
             margin-bottom: 65px;
-        }
+            position: relative;
+    }
 }
 
 
 .partners-list{
     display: flex;
-    gap: 109px;
+    gap: 59px;
+
+    .partners-item > a{
+        display: block;
+        padding: 20px;
+
+        &:hover{
+            border-radius: 10px;
+                box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.07);
+        }
+    }
 }

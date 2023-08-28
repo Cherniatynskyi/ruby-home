@@ -4,12 +4,16 @@
 }
 
 .button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     color: white;
     background-color: $button-color;
     border-radius: 8px;
 
     height: 54px;
-    padding: 0 30px;
+    padding: 0 20px;
 
 
     font-size: 16px;
@@ -23,11 +27,33 @@
     }
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
 .secondary-title{
+    display: inline-block;
+    position: relative;
     font-size: 44px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+   text-align: center;
+
+    &::after {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: -18%;
+            width: 70px;
+            height: 70px;
     
-    text-align: center;
+            border-radius: 50%;
+            background-image: url("https://w1.pngwing.com/pngs/793/457/png-transparent-house-symbol-logo-home-red-text-line-area-circle-thumbnail.png");
+            background-size: contain;
+            z-index: 0;
+            opacity: 0.05;
+        }
 }
