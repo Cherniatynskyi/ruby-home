@@ -22,6 +22,8 @@
 
     cursor: pointer;
 
+    transition: $animation;
+
     &:hover{
         background-color: rgb(44, 81, 232);
     }

@@ -21,7 +21,11 @@
         gap: 15px;
     }
 
-    .footer__socials-item{
+    .footer__socials-item > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -29,6 +33,21 @@
         background-color: $accent-color;
 
         margin-top: 25px;
+
+        opacity: 0.8;
+
+        transition: $animation;
+
+        & > svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        &:hover{
+            background-color: $accent-color;
+            opacity: 1;
+        }
     }
 
 
@@ -60,6 +79,8 @@
         text-transform: capitalize;
 
         opacity: 0.7;
+
+        transition: $animation;
 
         &:hover{
             color: $accent-color;

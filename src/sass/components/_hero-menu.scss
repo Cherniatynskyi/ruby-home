@@ -33,6 +33,8 @@
 
     cursor: pointer;
 
+    transition: $animation;
+
     &.active {
         color: $accent-color;
         opacity: 1;

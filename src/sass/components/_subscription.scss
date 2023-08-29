@@ -1,8 +1,43 @@
 .subscription-container{
+    position: relative;
     background-color: #433E89;
 
     padding: 70px 208px;
     border-radius: 10px;
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+
+        width: 208px;
+        height: 208px;
+        left: -14%;
+        top: 6%;
+
+        border-radius: 50%;
+        background-color: #FFF;
+        opacity: 0.1;
+
+        overflow: hidden;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+    
+        width: 208px;
+        height: 208px;
+        right: 2%;
+        bottom: -36%;
+    
+        border-radius: 50%;
+        background-color: #FFF;
+        opacity: 0.1;
+    
+        overflow: hidden;
+    }
 }
 
 .subscription-title{

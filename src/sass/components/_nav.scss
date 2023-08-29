@@ -24,6 +24,8 @@
     line-height: normal;
     opacity: 0.7;
 
+    transition: $animation;
+
     &:hover{
         color: $accent-color;
         opacity: 1;
