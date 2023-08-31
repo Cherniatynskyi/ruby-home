@@ -30,6 +30,7 @@
     border: 2px solid rgba(254, 117, 63, 0.10);
 
     padding: 30px;
+    margin: 0 15px;
 
     .reviewer-data-container {
         display: flex;
@@ -70,4 +71,30 @@
 
         margin-top: 30px;
     }
+}
+
+.slick-dots{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   margin: auto;
+
+   & li{
+    list-style: none;
+   }
+
+   & button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #EDEDED;
+    border-radius: 50%;
+
+    cursor: pointer;
+   }
+
+   & li.slick-active button{
+    background-color: #2E6EFF;
+   }
 }
