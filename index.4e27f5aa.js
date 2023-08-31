@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".reviews-list").slick({autoplay:!0,autoplaySpeed:4e3,arrows:!1,dots:!0,infinite:!0,speed:600,slidesToShow:2,slidesToScroll:2,responsive:[{breakpoint:1024,settings:{slidesToShow:2,slidesToScroll:2,infinite:!0,dots:!0}},{breakpoint:600,settings:{slidesToShow:1,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]})}));
+//# sourceMappingURL=index.4e27f5aa.js.map
