@@ -43,7 +43,11 @@
                         <a class="nav-link" href="#">Blog</a>
                     </li>
                 </ul>
-                <button class="nav-button button" type="button">
+                <button
+                    data-micromodal-trigger="modal-2"
+                    class="nav-button button"
+                    type="button"
+                >
                     Contact us
                 </button>
             </nav>
@@ -91,7 +95,9 @@
                         <ul class="hero-menu__selection-list">
                             <li class="hero-menu__selection-item">
                                 <button
-                                    type="button"
+                                    data-select
+                                    type="select"
+                                    id="region-select"
                                     class="hero-menu-select-button"
                                 >
                                     Location
@@ -100,39 +106,102 @@
                                             href="./images/symbol-defs.svg#icon-arrow"
                                         ></use>
                                     </svg></button
-                                ><span class="hero-menu__select-text"
+                                ><span
+                                    id="region-span"
+                                    class="hero-menu__select-text"
                                     >Dhaka</span
                                 >
+                                <div
+                                    class="hero-menu__dropper visually-hidden"
+                                    id="region-dropper"
+                                >
+                                    <ul
+                                        id="region-dropper-list"
+                                        class="dropper-list"
+                                    >
+                                        <li class="dropper-item">London</li>
+                                        <li class="dropper-item">Manchester</li>
+                                        <li class="dropper-item">Glasgow</li>
+                                        <li class="dropper-item">Newcastle</li>
+                                        <li class="dropper-item">Sheffield</li>
+                                        <li class="dropper-item">Leeds</li>
+                                        <li class="dropper-item">Bristol</li>
+                                        <li class="dropper-item">Birmingham</li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="hero-menu__selection-item">
                                 <button
-                                    type="button"
+                                    data-select
+                                    type="select"
                                     class="hero-menu-select-button"
+                                    id="type-select"
                                 >
-                                    Property type
+                                    Type
                                     <svg width="15" height="15">
                                         <use
                                             href="./images/symbol-defs.svg#icon-arrow"
                                         ></use>
                                     </svg></button
-                                ><span class="hero-menu__select-text"
+                                ><span
+                                    id="type-span"
+                                    class="hero-menu__select-text"
                                     >Duplex</span
                                 >
+                                <div
+                                    class="hero-menu__dropper visually-hidden"
+                                    id="type-dropper"
+                                >
+                                    <ul
+                                        id="type-dropper-list"
+                                        class="dropper-list"
+                                    >
+                                        <li class="dropper-item">Apartment</li>
+                                        <li class="dropper-item">Duplex</li>
+                                        <li class="dropper-item">Single</li>
+                                        <li class="dropper-item">Tiny</li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="hero-menu__selection-item">
                                 <button
-                                    type="button"
+                                    data-select
+                                    type="select"
                                     class="hero-menu-select-button"
+                                    id="price-select"
                                 >
                                     Price
                                     <svg width="15" height="15">
                                         <use
                                             href="./images/symbol-defs.svg#icon-arrow"
                                         ></use>
-                                    </svg></button
-                                ><span class="hero-menu__select-text"
+                                    </svg>
+                                </button>
+                                <span
+                                    id="price-span"
+                                    class="hero-menu__select-text"
                                     >$4000-$8000</span
                                 >
+                                <div
+                                    class="hero-menu__dropper visually-hidden"
+                                    id="price-dropper"
+                                >
+                                    <ul
+                                        id="price-dropper-list"
+                                        class="dropper-list"
+                                    >
+                                        <li class="dropper-item">
+                                            $2000-$4000
+                                        </li>
+                                        <li class="dropper-item">
+                                            $4000-$8000
+                                        </li>
+                                        <li class="dropper-item">
+                                            $8000-$16000
+                                        </li>
+                                        <li class="dropper-item">$16000+</li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                         <button type="button" class="button">
@@ -192,9 +261,12 @@
                         />
                         <div class="property__content-container">
                             <h3 class="property__item-title">
-                                Capital hill residence
-                                <svg width="15" height="15">
+                                Capital hill residence<svg
+                                    width="15"
+                                    height="15"
+                                >
                                     <use
+                                        class="heart-icon"
                                         href="./images/symbol-defs.svg#icon-heart"
                                     ></use>
                                 </svg>
@@ -231,6 +303,7 @@
                             </ul>
                             <span class="property-cost">$5527.00</span>
                             <button
+                                data-micromodal-trigger="modal-1"
                                 class="button property-button"
                                 type="button"
                             >
@@ -249,6 +322,7 @@
                                 Picket Fence Realty
                                 <svg width="15" height="15">
                                     <use
+                                        class="heart-icon"
                                         href="./images/symbol-defs.svg#icon-heart"
                                     ></use>
                                 </svg>
@@ -285,6 +359,7 @@
                             </ul>
                             <span class="property-cost">$6727.00</span>
                             <button
+                                data-micromodal-trigger="modal-1"
                                 class="button property-button"
                                 type="button"
                             >
@@ -303,6 +378,7 @@
                                 Banyon Tree Realty
                                 <svg width="15" height="15">
                                     <use
+                                        class="heart-icon"
                                         href="./images/symbol-defs.svg#icon-heart"
                                     ></use>
                                 </svg>
@@ -339,6 +415,7 @@
                             </ul>
                             <span class="property-cost">$4327.00</span>
                             <button
+                                data-micromodal-trigger="modal-1"
                                 class="button property-button"
                                 type="button"
                             >
@@ -357,6 +434,7 @@
                                 Corsair Real Estate
                                 <svg width="15" height="15">
                                     <use
+                                        class="heart-icon"
                                         href="./images/symbol-defs.svg#icon-heart"
                                     ></use>
                                 </svg>
@@ -393,6 +471,7 @@
                             </ul>
                             <span class="property-cost">$4427.00</span>
                             <button
+                                data-micromodal-trigger="modal-1"
                                 class="button property-button"
                                 type="button"
                             >
@@ -411,6 +490,7 @@
                                 Sequoia Real Estate
                                 <svg width="15" height="15">
                                     <use
+                                        class="heart-icon"
                                         href="./images/symbol-defs.svg#icon-heart"
                                     ></use>
                                 </svg>
@@ -449,6 +529,7 @@
                             <button
                                 class="button property-button"
                                 type="button"
+                                data-micromodal-trigger="modal-1"
                             >
                                 View Details
                             </button>
@@ -465,6 +546,7 @@
                                 Strive Partners Realty
                                 <svg width="15" height="15">
                                     <use
+                                        class="heart-icon"
                                         href="./images/symbol-defs.svg#icon-heart"
                                     ></use>
                                 </svg>
@@ -501,6 +583,7 @@
                             </ul>
                             <span class="property-cost">$5527.00</span>
                             <button
+                                data-micromodal-trigger="modal-1"
                                 class="button property-button"
                                 type="button"
                             >
@@ -932,6 +1015,108 @@
             integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
             crossorigin="anonymous"
         ></script>
-        <script src="../src/js/slider.js"></script>
+        <script type="module" src="../src/js/index.js"></script>
+        <div class="render-modal">
+            <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-1-title"
+                    >
+                        <header class="modal__header">
+                            <h2 class="modal__title" id="modal-1-title">
+                                Micromodal
+                            </h2>
+                            <button
+                                class="modal__close"
+                                aria-label="Close modal"
+                                data-micromodal-close
+                            ></button>
+                        </header>
+                        <main class="modal__content" id="modal-1-content">
+                            <p>
+                                Try hitting the <code>tab</code> key and notice
+                                how the focus stays within the modal itself.
+                                Also, <code>esc</code> to close modal.
+                            </p>
+                        </main>
+                        <footer class="modal__footer">
+                            <button class="modal__btn modal__btn-primary">
+                                Continue
+                            </button>
+                            <button
+                                class="modal__btn"
+                                data-micromodal-close
+                                aria-label="Close this dialog window"
+                            >
+                                Close
+                            </button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-2-title"
+                >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">
+                            We will contact you
+                        </h2>
+                        <button
+                            class="modal__close"
+                            aria-label="Close modal"
+                            data-micromodal-close
+                        ></button>
+                    </header>
+                    <main class="modal__content" id="modal-2-content">
+                        <form class="form" autocomplete="off">
+                            <label class="form-field">
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    name="name"
+                                    placeholder=" "
+                                />
+                                <span class="form-label">Name</span>
+                            </label>
+                            <label class="form-field">
+                                <input
+                                    type="tel"
+                                    class="form-input"
+                                    name="phone"
+                                    placeholder=" "
+                                />
+                                <span class="form-label">Phone</span>
+                            </label>
+                            <label class="form-field">
+                                <input
+                                    type="mail"
+                                    class="form-input"
+                                    name="mail"
+                                    placeholder=" "
+                                />
+                                <span class="form-label">Email</span>
+                            </label>
+                            <button
+                                class="button form-button"
+                                type="submit"
+                                data-micromodal-close
+                                aria-label="Close this dialog window"
+                            >
+                                Send
+                            </button>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,5 @@
+import './slider'
+import './hero-menu'
+import './properties'
+import './properties-modal'
+import './contacts-modal'

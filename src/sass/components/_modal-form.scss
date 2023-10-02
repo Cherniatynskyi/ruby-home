@@ -1,0 +1,118 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    min-width: 700px;
+
+    margin-top: 70px;
+}
+
+.form-field {
+    display: inline-flex;
+    position: relative;
+
+    margin-top: 45px;
+
+    &:first-child{
+        margin-top: 0;
+    }
+}
+
+.form-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 50px;
+
+    padding-left: 12px;
+
+    transition: border-color var(--animation);
+}
+
+.form-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 16px;
+    line-height: 1.16;
+    color: var(--second-text-color);
+    letter-spacing: 0.01em;
+    cursor: text;
+
+    
+
+    transition: transform var(--animation);
+}
+
+.form-input:focus {
+    border-color: var(--minor-text-color);
+}
+
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translate(-12px, -50px);
+    cursor: default;
+}
+
+.form-input:focus~.form-icon {
+    fill: var(--minor-text-color);
+}
+
+.form-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    fill: currentColor;
+
+    transition: fill var(--animation);
+}
+
+
+.close-button-conatainer {
+    display: flex;
+    justify-content: end;
+}
+
+
+.contract {
+    color: var(--minor-text-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-button {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.modal-button {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill var(--animation);
+}
+
+.modal-button:focus,
+.modal-button:hover {
+    fill: var(--minor-text-color);
+}
+
